@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "data"
+		},
+		{
+			"path": "scripts"
+		},
+		{
+			"path": "venv"
+		}
+	]
+}

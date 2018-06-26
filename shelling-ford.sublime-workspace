@@ -1,0 +1,290 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "shelling-ford.sublime-project",
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/testing.ipynb",
+			"settings":
+			{
+				"buffer_size": 555,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nHermes\n------\n\n  Hermes package for Sublime Text 3\n  ===\n  \n  Hermes is a package for Sublime Text 3, which provides in-editor code execution and autocomplete in interaction with Jupyter kernels.\n  The concept of an editor extension communicating Jupyter kernels is inspired by @nteract's splendid Atom package [Hydrogen](https://github.com/nteract/Hydrogen). I want something like it in Sublime Text 3, too.\n  \n  Any feedback is highly welcome. I hope this package will help your life with ST3!\n  \n  ![Introduction image](raw/images/README/intro.png)\n  \n  Features\n  ---------------\n  \n    - Connect to Jupyter gateway and start / interrupt / shutdown / restart kernels.\n    - Connect to running Jupyter processes through HTTP.\n  \n      + The plugin can deal authorization by token.\n  \n    - Execute code block in view and get the result within ST3.\n  \n      + The executed code blocks are:\n  \n        * If there are selected regions, execute them.\n        * If not, the adjacent lines with no empty line and not less indented than the line which includes the cursor are considered as the code block.\n  \n      + A view to store inputs and results is created for each kernel.\n      + Figures with \"image/png\" type and passed as a \"display_data\" message can be shown within result view.\n  \n    - Autocomplete is provided by the kernel.\n    - Get object inspection from the kernel.\n  \n  \n  Why using Jupyter?\n  -----------------\n  \n  We can execute code, retrieve results including images, get completions and object inspections by the Jupyter protocol regardless of the interpreter implementation of languages if it has Jupyter kernel.\n  If we try to do that by directly running interpreters there should be several interpreter-specific problems, but we can entrust the kernel maintainers on language-specific problems by using Jupyter. \n  \n  \n  Why not using Jupyter Notebook?\n  -----------------\n  \n  I admit Jupyter Notebook is a powerful tool for instantly sharing small analysis work, exploring data or APIs, or making executable tutorials. Yes, I often use it, too.\n  However, in my opinion, it is not suited for projects with large code bases.\n  I want to jumpt across files instantly, make modules organized (not saved as `.ipynb`s), kick scripts with various parameters, and make project code more reusable and reproducible... but still I want to edit them with interactive feedback.\n  \n  \n  Installation\n  -----------------\n  \n  Now this package is under the package control channel!\n  \n  You can install it with Package Control plugin, run `Package Control: Install Package`, then choose `Hermes` from the package list.\n  \n  \n  Usage\n  -----------------\n  \n    0. (Outside of the editor) Start Jupyter notebook server. Create a SSH tunnel to that if necessary.\n    1. Connect to the server by `Hermes: Connect Server` command (whose command name is `hermes_connect_server`). Input the address of the Jupyter server and the token of the running process. You can write them in the preference.\n    2. Connect to kernel.\n  \n      - If no kernel is running, start a kernel by `Hermes: Start Kernel` (whose command name is `hermes_start_kernel`)\n      - If kernel exists, correspond the view to the kernel by `Hermes: Connect Kernel` (whose command name is `hermes_connect_kernel`)\n      - You will be required to input \n  \n    3. Play with Jupyter kernels. Commands below are shown only when the active view is connected to a Jupyter kernel.\n  \n      - Execute code by `Hermes: Execute Block` (whose command name is `hermes_execute_block`).\n      - Get Object Inspection by `Hermes: Get Object Inspection` (whose command name is `hermes_get_object_inspection`).\n      - You should be able to get autocomplete from the kernel from the time you connected. If you don't want autocomplete, set `\"complete\"` as `false` in setting file.\n      - You can restart, shutdown, and interrupt process via `Hermes: Restart Kernel`, `Hermes: Shutdown Kernel`, `Hermes: Interrupt Kernel` commands.\n  \n    4. You can manipulate kernels by `Hermes: List Kernels` command.\n  \n  \n  TODOs\n  -----------------\n  \n    - [ ] Moving cursor on execution.\n    - [ ] Rearrange log messages. Make option to set logging level.\n    - [ ] Implement output as inline Phantom like LightTable or Hydrogen.\n    - [ ] Password authentication.\n",
+			"settings":
+			{
+				"buffer_size": 4362,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Users/lchan/Documents/shelling-ford/shelling-ford-venv",
+		"/D/Users/lchan/Documents/shelling-ford/data",
+		"/D/Users/lchan/Documents/shelling-ford/scripts"
+	],
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "shelling-ford.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scripts/testing.ipynb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 555,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								531,
+								531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4362,
+								4362
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "shelling-ford.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
